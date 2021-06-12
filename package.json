@@ -1,0 +1,31 @@
+{
+  "name": "telegram-process-end-notify",
+  "version": "1.0.0",
+  "description": "This package allows you to watch your local processes and get notifications in Telegram when a specific process finishes.",
+  "keywords": [
+    "telegram",
+    "node",
+    "process"
+  ],
+  "homepage": "https://github.com/NeliHarbuzava/telegram-process-end-notify#readme",
+  "bugs": {
+    "url": "https://github.com/NeliHarbuzava/telegram-process-end-notify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeliHarbuzava/telegram-process-end-notify.git"
+  },
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index"
+  },
+  "author": "Neli Harbuzava",
+  "dependencies": {
+    "dotenv": "10.0.0",
+    "node": "14.8.0",
+    "process-end-notify": "2.0.3",
+    "telegraf": "4.3.0",
+    "telegraf-inline-menu": "6.2.1"
+  }
+}
