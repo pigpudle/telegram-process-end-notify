@@ -14,6 +14,7 @@ BOT_TOKEN=<your_bot_api_key>
 4. Open Telegram and add your bot to your chat list.
 5. Open a terminal window inside the repository folder and run:
 ```
+npm i
 npm run start
 ```
 6. Open your bot in Telegram and type `/start`.
