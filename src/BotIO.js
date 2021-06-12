@@ -11,7 +11,14 @@ class BotIO extends EventEmitter {
         this.resetMenuData();
 
         menuTemplate.choose('unique',
-            () => this.menuData.items.map(item => `${item}`.substring(0, 40))
+            () => this.menuData.items.map(item => {
+                // crop text to fit buttons
+                if (item.length > 40) {
+                    return item.substring(0, 18) + '...' + item.substring(item.length - 19);
+                }
+
+                return item;
+            })
                 .reduce((obj, val, index) => ({ ...obj, [index]: val }), {}),
             {
                 do: async (ctx, key) => {
