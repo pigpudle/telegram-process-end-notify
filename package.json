@@ -18,7 +18,11 @@
   "license": "MIT",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node ./src/index"
+    "start": "node ./src/index",
+    "start:2": "node ./src/main"
+  },
+  "bin": {
+    "tg-notify": "npm run start:2"
   },
   "author": "Neli Harbuzava",
   "dependencies": {
