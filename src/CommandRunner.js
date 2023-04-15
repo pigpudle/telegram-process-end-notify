@@ -3,6 +3,7 @@ const Command = require('./Command');
 const logger = require('./logger');
 const help = require('./services/help');
 const version = require('./services/version');
+const setBot = require('./services/setBot');
 
 const 
     CLI_COMMAND = Object.keys(packageJson.bin)[0],
@@ -23,7 +24,7 @@ const commands = {
     })}), {}),
     ['set-bot']: new Command({
         argsLength: 1,
-        runner: () => {},
+        runner: (token) => setBot(token),
         helpMessage: `${CLI_COMMAND} set-bot <BOT_TOKEN>`,
         description: 'Sets a bot token'
     }),
