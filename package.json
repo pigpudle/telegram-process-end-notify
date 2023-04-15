@@ -7,14 +7,6 @@
     "node",
     "process"
   ],
-  "homepage": "https://github.com/NeliHarbuzava/telegram-process-end-notify#readme",
-  "bugs": {
-    "url": "https://github.com/NeliHarbuzava/telegram-process-end-notify/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NeliHarbuzava/telegram-process-end-notify.git"
-  },
   "license": "MIT",
   "main": "./src/index.js",
   "scripts": {
